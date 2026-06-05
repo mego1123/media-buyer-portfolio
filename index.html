@@ -1,0 +1,887 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماجد - مشتري إعلانات رقمي</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/smooth-scrollbar.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/rtl.css">
+
+</head>
+<body>
+
+
+    <div class="page-loader">
+        <div class="bounceball"></div>
+    </div>
+
+    <span class="icon-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div class="global-color">
+        <span class="setting-toggle">
+            <i class="las la-cog"></i>
+        </span>
+        <div class="inner">
+            <div class="overlay"></div>
+            <div class="global-color-option">
+                <span class="close-settings">
+                    <i class="las la-times"></i>
+                </span>
+                <h2>الإعدادات</h2>
+                <div class="global-color-option-inner">
+                    <p>الألوان</p>
+                    <div class="color-boxed">
+                        <a href="#" class="clr-active" onclick="color1();"></a>
+                        <a href="#" onclick="color2();"></a>
+                        <a href="#" onclick="color3();"></a>
+                        <a href="#" onclick="color4();"></a>
+                        <a href="#" onclick="color5();"></a>
+                        <a href="#" onclick="color6();"></a>
+                        <a href="#" onclick="color7();"></a>
+                        <a href="#" onclick="color8();"></a>
+                    </div>
+
+                    <p>أشكال ثلاثية الأبعاد</p>
+                    <ul class="themes">
+                        <li><a href="./home1.html">كرة خطوط الأرض</a></li>
+                        <li><a href="./home2.html">كرة مجردة ثلاثية الأبعاد</a></li>
+                        <li><a href="./home3.html">موجات مائية</a></li>
+                        <li><a href="./home4.html">سوائل متموجة</a></li>
+                        <li><a href="./home6.html">لون صلب</a></li>
+                        <li><a href="./home5.html">خيوط بسيطة</a></li>
+                    </ul>
+
+                    <p>الاتجاه</p>
+                    <ul class="themes">
+                        <li><a href="#" onclick="setDirection('ltr');">من اليسار</a></li>
+                        <li><a href="#" onclick="setDirection('rtl');">من اليمين</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive-sidebar-menu">
+        <div class="overlay"></div>
+        <div class="sidebar-menu-inner">
+            <div class="menu-wrap">
+                <p>القائمة</p>
+                <ul class="menu scroll-nav-responsive d-flex">
+                    <li>
+                        <a class="scroll-to" href="#home">
+                            <i class="las la-home"></i> <span>الرئيسية</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#about">
+                            <i class="lar la-user"></i> <span>عنّي</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#resume">
+                            <i class="las la-briefcase"></i> <span>السيرة</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#services">
+                            <i class="las la-stream"></i> <span>الخدمات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#skills">
+                            <i class="las la-shapes"></i> <span>المهارات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#portfolio">
+                            <i class="las la-grip-vertical"></i> <span>الأعمال</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#testimonial">
+                            <i class="lar la-comment"></i> <span>الشهادات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="scroll-to" href="#contact">
+                            <i class="las la-envelope"></i> <span>اتصل بي</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="sidebar-social">
+                <p>وسائل التواصل</p>
+                <ul class="social-links d-flex align-items-center">
+                    <li>
+                        <a href=""><i class="lab la-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="lab la-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="lab la-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="menu scroll-nav d-flex">
+        <li>
+            <a class="scroll-to" href="#home">
+                <span>الرئيسية</span> <i class="las la-home"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#about">
+                <span>عنّي</span> <i class="lar la-user"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#resume">
+                <span>السيرة</span> <i class="las la-briefcase"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#services">
+                <span>الخدمات</span> <i class="las la-stream"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#skills">
+                <span>المهارات</span> <i class="las la-shapes"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#portfolio">
+                <span>الأعمال</span> <i class="las la-grip-vertical"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#testimonial">
+                <span>الشهادات</span> <i class="lar la-comment"></i>
+            </a>
+        </li>
+        <li>
+            <a class="scroll-to" href="#contact">
+                <span>اتصل بي</span> <i class="las la-envelope"></i>
+            </a>
+        </li>
+    </ul>
+
+    <div class="left-sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <img src="images/logo.png" alt="Logo">
+            <span class="designation">مشتري إعلانات رقمي</span>
+        </div>
+        <img class="me" src="images/me.jpg" alt="ماجد">
+        <h2 class="email">magdy@media-buyer.com</h2>
+        <h2 class="address">القاهرة، مصر</h2>
+        <p class="copyright">© 2025 ماجد. جميع الحقوق محفوظة</p>
+        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+            <li>
+                <a href=""><i class="lab la-twitter"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="lab la-linkedin-in"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="lab la-instagram"></i></a>
+            </li>
+            <li>
+                <a href=""><i class="lab la-snapchat"></i></a>
+            </li>
+        </ul>
+        <a href="#" class="theme-btn">
+            <i class="las la-envelope"></i> وظفني!
+        </a>
+    </div>
+
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <img src="images/logo.png" alt="Logo">
+                        <span class="designation">مشتري إعلانات رقمي</span>
+                    </div>
+                    <img class="me" src="images/me.jpg" alt="ماجد">
+                    <h2 class="email">magdy@media-buyer.com</h2>
+                    <h2 class="address">القاهرة، مصر</h2>
+                    <p class="copyright">© 2025 ماجد. جميع الحقوق محفوظة</p>
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href=""><i class="lab la-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-snapchat"></i></a>
+                        </li>
+                    </ul>
+                    <a href="#" class="theme-btn">
+                        <i class="las la-envelope"></i> وظفني!
+                    </a>
+                </div>
+
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <div class="left-sidebar">
+                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+                        <img src="images/logo.png" alt="Logo">
+                        <span class="designation">مشتري إعلانات رقمي</span>
+                    </div>
+                    <img class="me" src="images/me.jpg" alt="ماجد">
+                    <h2 class="email">magdy@media-buyer.com</h2>
+                    <h2 class="address">القاهرة، مصر</h2>
+                    <p class="copyright">© 2025 ماجد. جميع الحقوق محفوظة</p>
+                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                        <li>
+                            <a href=""><i class="lab la-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="lab la-github"></i></a>
+                        </li>
+                    </ul>
+                    <a href="#" class="theme-btn">
+                        <i class="las la-envelope"></i> وظفني!
+                    </a>
+                </div>
+
+                <section class="hero-section page-section scroll-to-page" id="home">
+
+                    <div class="custom-container">
+                        <div class="hero-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-home"></i> مقدمة
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">مرحباً، أنا <span>ماجد</span>، مشتري إعلانات رقمي</h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">أساعد العلامات التجارية على النمو من خلال إعلانات رقمية مدروسة تحقق أعلى عائد استثمار. أحول الميزانيات إلى نتائج حقيقية.</p>
+                            <a href="#portfolio" class="go-to-project-btn scroll-to scroll-animation" data-animation="rotate_up">
+                                <img src="images/round-text.png" alt="Rounded Text">
+                                <i class="las la-arrow-down"></i>
+                            </a>
+        
+                            <div class="facts d-flex">
+                                <div class="left scroll-animation" data-animation="fade_from_left">
+                                    <h1>$2.5M+</h1>
+                                    <p>إنفاق إعلاني<br>مُدار</p>
+                                </div>
+                                <div class="right scroll-animation" data-animation="fade_from_right">
+                                    <h1>200+</h1>
+                                    <p>حملة ناجحة في <br>أكثر من 20 دولة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="about-area page-section scroll-to-page" id="about">
+                    <div class="custom-container">
+                        <div class="about-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-user"></i> عنّي
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">الإعلانات الرقمية ليست إنفاقاً<br>إنها <span>استثمار ذكي</span></h1>
+                            </div>
+                            <p class="scroll-animation" data-animation="fade_from_bottom">منذ بداية رحلتي في عالم الإعلانات الرقمية منذ أكثر من 7 سنوات، 
+                                أدرت ميزانيات إعلانية ضخمة لعلامات تجارية في مجالات متعددة مثل التجارة الإلكترونية والتطبيقات والخدمات. 
+                                أعمل مع فيسبوك، إنستغرام، تيك توك، سناب شات، وجوجل لإطلاق حملات إعلانية 
+                                محسّنة تحقق أعلى عائد استثمار. أثق بالبيانات وأقرّها، وأطور الاستراتيجيات بناءً على التحليل المستمر 
+                                لأداء الحملات. كل دولار يُنفق هو فرصة لتحقيق نمو حقيقي.</p>
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="resume-area page-section scroll-to-page" id="resume">
+                    <div class="custom-container">
+                        <div class="resume-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-briefcase"></i> السيرة الذاتية
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">التعليم و <span>الخبرة</span></h1>
+                            </div>
+        
+                            <div class="resume-timeline">
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2023 - حتى الآن</span>
+                                    <h2>مشتري إعلانات أول</h2>
+                                    <p>وكالة إعلانات كبرى - دبي</p>
+                                    <h2>مستشار إعلانات رقمية</h2>
+                                    <p>عمل حر - عن بُعد</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2020 - 2023</span>
+                                    <h2>مشتري إعلانات</h2>
+                                    <p>شركة تكافل للتجارة الإلكترونية</p>
+                                    <h2>أخصائي تسويق رقمي</h2>
+                                    <p>وكالة أضواء للتسويق</p>
+                                    <h2>مدير حملات إعلانية</h2>
+                                    <p>متجر وردة للأزياء</p>
+                                </div>
+                                <div class="item scroll-animation" data-animation="fade_from_right">
+                                    <span class="date">2017 - 2020</span>
+                                    <h2>بكالوريوس في التسويق والإعلان</h2>
+                                    <p>جامعة القاهرة</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="services-area page-section scroll-to-page" id="services">
+                    <div class="custom-container">
+                        <div class="services-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-stream"></i> الخدمات
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom"> <span>تخصصاتي</span></h1>
+                            </div>
+        
+                            <div class="services-items">
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lab la-facebook-f"></i>
+                                    <h2>إعلانات فيسبوك وإنستغرام</h2>
+                                    <p>أطلق وأدر حملات إعلانية محسّنة على فيسبوك وإنستغرام تستهدف الجمهور المناسب بأقل تكلفة</p>
+                                    <span class="projects">120+ حملة</span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-video"></i>
+                                    <h2>إعلانات تيك توك وسناب شات</h2>
+                                    <p>استغل قوة الفيديو القصير للوصول إلى جمهور جديد وتحقيق مبيعات باستهداف دقيق</p>
+                                    <span class="projects">60+ حملة</span>
+                                </div>
+                                <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lab la-google"></i>
+                                    <h2>إعلانات جوجل ويوتيوب</h2>
+                                    <p>تصدر نتائج البحث واعرض إعلاناتك على يوتيوب وجوجل ديسبلاي بأعلى عائد استثمار</p>
+                                    <span class="projects">45+ حملة</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="skills-area page-section scroll-to-page" id="skills">
+                    <div class="custom-container">
+                        <div class="skills-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-shapes"></i> مهاراتي
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom"><span>مميزاتي</span></h1>
+                            </div>
+        
+                            <div class="row skills text-center">
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/figma.png" alt="Meta Ads">
+                                            <h1 class="percent">98%</h1>
+                                        </div>
+                                        <p class="name">Meta Ads</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/framer.png" alt="TikTok Ads">
+                                            <h1 class="percent">92%</h1>
+                                        </div>
+                                        <p class="name">TikTok Ads</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/webflow.png" alt="Google Ads">
+                                            <h1 class="percent">88%</h1>
+                                        </div>
+                                        <p class="name">Google Ads</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/react.png" alt="Snapchat Ads">
+                                            <h1 class="percent">85%</h1>
+                                        </div>
+                                        <p class="name">Snapchat Ads</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/wordpress.png" alt="Google Analytics">
+                                            <h1 class="percent">90%</h1>
+                                        </div>
+                                        <p class="name">Google Analytics</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="skill">
+                                        <div class="skill-inner">
+                                            <img src="images/laravel.png" alt="Pixel Tracking">
+                                            <h1 class="percent">87%</h1>
+                                        </div>
+                                        <p class="name">Pixel Tracking</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div class="custom-container">
+                        <div class="portfolio-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-grip-vertical"></i> الأعمال
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom"> <span>مشاريع</span> مميزة</h1>
+                            </div>
+        
+                            <div class="row portfolio-items">
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-full">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio1.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio1.jpg" alt="حملة إعلانية">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">فيسبوك</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">إنستغرام</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">متجر إلكتروني</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">حملة متجر أزياء - عائد استثمار 4.5x</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio2.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio2.jpg" alt="حملة إعلانية">
+                                            </a>
+        
+                                            <img src="images/portfolio2.jpg" alt="حملة إعلانية">
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">تيك توك</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">تطبيقات</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">حملة تطبيق توصيل - 50 ألف تحميل</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio3.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio3.jpg" alt="حملة إعلانية">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">جوجل</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">يوتيوب</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">حملة يوتيوب لخدمة تعليمية - 2 مليون مشاهدة</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio4.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio4.jpg" alt="حملة إعلانية">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">سناب شات</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">فيسبوك</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">حملة علامة تجارية عقارية - 350 عميل محتمل</a></h2>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div class="portfolio-item portfolio-half">
+                                        <div class="portfolio-item-inner">
+                                            <a href="./assets/images/portfolio5.jpg" data-lightbox="example-1">
+                                                <img src="images/portfolio5.jpg" alt="حملة إعلانية">
+                                            </a>
+        
+                                            <ul class="portfolio-categories">
+                                                <li>
+                                                    <a href="">فيسبوك</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">تيك توك</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="">حملة إطلاق منتج جديد - مليون دولار مبيعات</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="testimonial-area page-section scroll-to-page" id="testimonial">
+                    <div class="custom-container">
+                        <div class="testimonial-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="lar la-comment"></i> الشهادات
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">موثوق من <span>مئات العملاء</span></h1>
+                            </div>
+        
+                            <div class="testimonial-slider-wrap scroll-animation" data-animation="fade_from_bottom">
+                                <div class="owl-carousel testimonial-slider owl-theme">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="images/testimonial-1.jpg" alt="عميل">
+                                                <div class="right">
+                                                    <h3>خالد العتيبي</h3>
+                                                    <p class="designation">مالك متجر <span>أضواء للتجارة</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“ماجد غيّر مفهومي عن الإعلانات تماماً. بعد ما كنت أحرق ميزانياتي على إعلانات بدون نتيجة، 
+                                                صار عندي نظام واضح يحقق لي مبيعات يومية بتكلفة مناسبة. محترف بمعنى الكلمة.”</p>
+        
+                                            <a href="" class="project-btn">المشروع</a>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="images/testimonial-2.jpg" alt="عميل">
+                                                <div class="right">
+                                                    <h3>سارة النمري</h3>
+                                                    <p class="designation">مديرة التسويق في <span>شركة تكافل</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“ماجد محترف في تحليل البيانات واتخاذ القرارات. الاستراتيجيات الي طبقها لنا 
+                                                ضاعفت مبيعاتنا في 3 أشهر فقط. أنصح بالتعامل معه بدون تردد.”</p>
+        
+                                            <a href="" class="project-btn">المشروع</a>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-item-inner">
+                                            <div class="author d-flex align-items-center">
+                                                <img src="images/testimonial-3.jpg" alt="عميل">
+                                                <div class="right">
+                                                    <h3>أحمد الغامدي</h3>
+                                                    <p class="designation">مؤسس <span>منصة تعليم</span></p>
+                                                </div>
+                                            </div>
+                                            <p>“تعاونا مع ماجد في أكثر من 10 حملات إعلانية. النتائج كانت مذهلة، 
+                                                عائد الاستثمار تضاعف 3 مرات. إنسان محترف وأمين ويهمّه نجاح عميله قبل كل شيء.”</p>
+        
+                                            <a href="" class="project-btn">المشروع</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-footer-nav">
+                                    <div class="testimonial-nav d-flex align-items-center">
+                                        <button class="prev"><i class="las la-angle-left"></i></button>
+                                        <div id="testimonial-slide-count"></div>
+                                        <button class="next"><i class="las la-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="clients-logos">
+                                <h4 class="scroll-animation" data-animation="fade_from_bottom">وثق بي أكثر من 40 علامة تجارية في جميع أنحاء الشرق الأوسط</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                        <img src="images/client-1.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                        <img src="images/client-2.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                        <img src="images/client-3.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                        <img src="images/client-4.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                        <img src="images/client-5.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                        <img src="images/client-6.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
+                                        <img src="images/client-7.png" alt="client">
+                                    </div>
+                                    <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
+                                        <img src="images/client-8.png" alt="client">
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+        
+        
+                <section class="pricing-area page-section scroll-to-page" id="pricing">
+                    <div class="custom-container">
+                        <div class="pricing-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-dollar-sign"></i> الأسعار
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom"><span>أسعاري</span></h1>
+                            </div>
+        
+                            <div class="pricing-table-items">
+                                <div class="row">
+                                    <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                        <div class="pricing-table">
+                                            <div class="pricing-table-header">
+                                                <div class="top d-flex justify-content-between align-items-start">
+                                                    <h4>مبتدئ</h4>
+                                                    <p class="text-right">ميزانية محدودة؟<br>
+                                                        نبدأ بحملة تجريبية</p>
+                                                </div>
+                                                <h1>$299 <span>/ شهرياً</span></h1>
+                                            </div>
+                                            <ul class="feature-lists">
+                                                <li>إدارة منصة إعلانية واحدة</li>
+                                                <li>استهداف وتحليل الجمهور</li>
+                                                <li>إعداد 3-5 مجموعات إعلانية</li>
+                                                <li>تقرير أداء أسبوعي</li>
+                                                <li>تحسين الحملات المستمر</li>
+                                                <li>دعم عبر الواتساب</li>
+                                            </ul>
+                                            <a href="" class="theme-btn">اختر هذه الباقة</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                        <div class="pricing-table">
+                                            <div class="pricing-table-header">
+                                                <div class="top d-flex justify-content-between align-items-start">
+                                                    <h4>متقدم</h4>
+                                                    <p class="text-right">تبغى نتائج سريعة؟<br>
+                                                        باقة شاملة متعددة المنصات</p>
+                                                </div>
+                                                <h1>$799 <span>/ شهرياً</span></h1>
+                                            </div>
+                                            <ul class="feature-lists">
+                                                <li>إدارة 3 منصات إعلانية</li>
+                                                <li>استراتيجية إعلانية متكاملة</li>
+                                                <li>إعداد 10+ مجموعة إعلانية</li>
+                                                <li>تصميم إعلانات احترافية</li>
+                                                <li>تقرير أداء أسبوعي ومقترحات</li>
+                                                <li>تحسين مستمر و A/B Testing</li>
+                                                <li>دعم على مدار الأسبوع</li>
+                                                <li>استشارات استراتيجية شهرية</li>
+                                            </ul>
+                                            <a href="" class="theme-btn">اختر هذه الباقة</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="info scroll-animation" data-animation="fade_from_bottom">
+                                    لا تناسبك هذه الباقات؟<br>
+                                    ودي أسمع احتياجك وأصمم لك باقة مخصصة. <a href="">تواصل معي</a>
+                                </p>
+                            </div>
+        
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="contact-area page-section scroll-content" id="contact">
+                    <div class="custom-container">
+                        <div class="contact-content content-width">
+                            <div class="section-header">
+                                <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i class="las la-envelope"></i> اتصل بي
+                                </h4>
+                                <h1 class="scroll-animation" data-animation="fade_from_bottom">لنعمل <span>معاً!</span></h1>
+                            </div>
+                            <h3 class="scroll-animation" data-animation="fade_from_bottom">magdy@media-buyer.com</h3>
+                            <p id="required-msg">* الحقول المحددة إلزامية.</p>
+
+                            <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST" action="mailer.php">
+                                <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
+                                    تم إرسال رسالتك بنجاح.
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="full-name">الاسم الكامل <sup>*</sup></label>
+                                            <input type="text" name="full-name" id="full-name" placeholder="اسمك الكامل">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="email">البريد الإلكتروني <sup>*</sup></label>
+                                            <input type="email" name="email" id="email" placeholder="بريدك الإلكتروني">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="phone-number">رقم الهاتف <span>(اختياري)</span></label>
+                                            <input type="text" name="phone-number" id="phone-number" placeholder="رقم هاتفك">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group">
+                                            <label for="subject">الموضوع <sup>*</sup></label>
+                                            <select name="subject" id="subject">
+                                                <option value="">اختر موضوعاً</option>
+                                                <option value="subject1">استشارة إعلانية</option>
+                                                <option value="subject2">طلب باقة إعلانية</option>
+                                                <option value="subject3">تعاون أو شراكة</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <label for="budget">ميزانيتك <span>(اختياري)</span></label>
+                                            <input type="number" name="budget" id="budget" placeholder="ميزانية الإعلانات الشهرية">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <label for="message">الرسالة</label>
+                                            <textarea name="message" id="message" placeholder="حدثني عن مشروعك أو استفسارك ..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input-group upload-attachment">
+                                            <div>
+                                                <label for="upload-attachment">
+                                                    <i class="las la-cloud-upload-alt"></i> إرفاق ملف
+                                                    <input type="file" name="file" id="upload-attachment">
+                                                </label>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="input-group submit-btn-wrap">
+                                            <button class="theme-btn" name="submit" type="submit" id="submit-form">إرسال الرسالة</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/color.js"></script>
+
+    <script>
+        function setDirection(dir) {
+            document.documentElement.setAttribute('dir', dir);
+            localStorage.setItem('site-direction', dir);
+        }
+        (function() {
+            var saved = localStorage.getItem('site-direction');
+            if (saved) {
+                document.documentElement.setAttribute('dir', saved);
+            }
+        })();
+    </script>
+
+</body></html>
